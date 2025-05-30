@@ -15,18 +15,28 @@
       margin: 0 0 10px 0;
       color: #0073b1;
       font-size: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
-    .clear-btn {
-      background: #d9534f;
+    .button-bar {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .button-bar button {
+      flex: 1;
+      background: #0073b1;
       color: white;
       border: none;
-      padding: 4px 8px;
+      padding: 6px;
       font-size: 12px;
       border-radius: 4px;
       cursor: pointer;
+    }
+    .button-bar button:hover {
+      background: #005f8d;
+    }
+    .clear-btn {
+      background: #d9534f;
     }
     .clear-btn:hover {
       background: #c9302c;
@@ -73,10 +83,13 @@
   </style>
 </head>
 <body>
-  <h3>
-    Hiding List
+  <h3>Hiding List</h3>
+  <div class="button-bar">
     <button class="clear-btn" id="clearAll">Clear All</button>
-  </h3>
+    <button id="exportBtn">Export</button>
+    <button id="importBtn">Import</button>
+    <input type="file" id="fileInput" accept="application/json" style="display:none;">
+  </div>
   <div class="list-box">
     <ul id="companyList"></ul>
   </div>
