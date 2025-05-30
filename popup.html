@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hiding List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      width: 280px;
+      background-color: #f3f3f3;
+    }
+    h3 {
+      margin: 0 0 10px 0;
+      color: #0073b1;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .clear-btn {
+      background: #d9534f;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .clear-btn:hover {
+      background: #c9302c;
+    }
+    .list-box {
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 8px;
+      background: #f7f9fa;
+      border-radius: 20px;
+      padding: 6px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      border: 1px solid #ccc;
+    }
+    .company-name {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .remove {
+      background: transparent;
+      border: none;
+      color: #888;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .remove:hover {
+      color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <h3>
+    Hiding List
+    <button class="clear-btn" id="clearAll">Clear All</button>
+  </h3>
+  <div class="list-box">
+    <ul id="companyList"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
