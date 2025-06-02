@@ -4,8 +4,7 @@
   "version": "1.1",
   "description": "Hide job posts from companies you don't want to see.",
   "permissions": [
-    "storage",
-    "scripting"
+    "storage"
   ],
   "content_scripts": [
     {
