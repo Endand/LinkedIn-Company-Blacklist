@@ -34,7 +34,7 @@ This Chrome extension allows you to filter out job postings from specific compan
 
 ### Managing the Blocklist
 
-- Click the extension icon in your Chrome toolbar
+- Click the extension icon in your Chrome toolbar (pin if needed)
 - You’ll see the Hiding List:
   - Remove individual companies
   - Click "Clear All" to unblock everything
